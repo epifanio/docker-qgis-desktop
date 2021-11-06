@@ -4,6 +4,7 @@ MAINTAINER Massimo Di Stefano<epiesasha@me.com>
 # Based off work by Tim Sutton<tim@kartoza.com>
  
 ENV LANG C
+ENV TZ=Europe/Oslo
 
 COPY build /build/scripts
 RUN /build/scripts/getDeps.sh && \
