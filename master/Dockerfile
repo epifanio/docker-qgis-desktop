@@ -1,7 +1,8 @@
-FROM ubuntu:16.04
-MAINTAINER Tim Sutton<tim@kartoza.com>
+FROM ubuntu:20.04
+MAINTAINER Massimo Di Stefano<epiesasha@me.com>
 # Based off work by Patrick Valsecchi<patrick.valsecchi@camptocamp.com>
-
+# Based off work by Tim Sutton<tim@kartoza.com>
+ 
 ENV LANG C
 
 COPY build /build/scripts
