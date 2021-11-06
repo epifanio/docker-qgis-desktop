@@ -13,7 +13,7 @@ COPY build /build/scripts
 RUN /build/scripts/getDeps.sh && \
     /build/scripts/getCode.sh
 
-RUN apt-get install -y build-essential libzip-dev grass-dev libprotobuf-dev
+RUN apt-get install -y build-essential libzip-dev grass-dev libprotobuf-dev protobuf-compiler
 RUN /build/scripts/make.sh && \
     /build/scripts/clean.sh
 
