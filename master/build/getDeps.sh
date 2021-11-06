@@ -14,4 +14,4 @@ LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get update &&  \
     spawn-fcgi xauth xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable xvfb 
 
 chmod -R a+w /usr/lib/x86_64-linux-gnu/qt5/plugins/designer/
-chmod -R a+w /usr/lib/python3.8/dist-packages/PyQt5/uic/widget-plugins/
+# chmod -R a+w /usr/lib/python3.8/dist-packages/PyQt5/uic/widget-plugins/
