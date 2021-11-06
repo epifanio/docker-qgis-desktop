@@ -11,8 +11,9 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 COPY build /build/scripts
 RUN /build/scripts/getDeps.sh && \
-    /build/scripts/getCode.sh && \
-    /build/scripts/make.sh && \
+    /build/scripts/getCode.sh
+    
+RUN /build/scripts/make.sh && \
     /build/scripts/clean.sh
 
 # A few tunable variables for QGIS
