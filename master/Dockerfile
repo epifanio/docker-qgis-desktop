@@ -12,7 +12,8 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 COPY build /build/scripts
 RUN /build/scripts/getDeps.sh && \
     /build/scripts/getCode.sh
-    
+
+RUN apt-get install -y build-essential
 RUN /build/scripts/make.sh && \
     /build/scripts/clean.sh
 
