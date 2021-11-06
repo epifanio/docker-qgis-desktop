@@ -8,7 +8,7 @@ apt-get -y update
 LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get update &&  \
     apt-get install -y git cmake flex bison libproj-dev libgeos-dev libgdal-dev \
     libexpat1-dev libfcgi-dev libgs-dev libpq-dev libqca-qt5-2-dev libqca-qt5-2-plugins \
-    libqscintilla2-qt5-dev libqt4-dev libqt5*-dev libsqlite3-dev \
+    libqscintilla2-qt5-dev libqt5*-dev libsqlite3-dev \
     lighttpd locales pkg-config poppler-utils pyqt5-dev-tools python python-dev \
     python3-pyqt5* \
     spawn-fcgi xauth xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable xvfb 
