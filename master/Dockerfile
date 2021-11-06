@@ -9,13 +9,7 @@ ENV TZ=Europe/Oslo
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 
-COPY build /build/scripts
-RUN /build/scripts/getDeps.sh && \
-    /build/scripts/getCode.sh
-
-RUN apt-get install -y build-essential libzip-dev grass-dev libprotobuf-dev protobuf-compiler libexiv2-dev qttools5-dev libgsl-dev libpython3-dev libqt5positioning5
-RUN /build/scripts/make.sh && \
-    /build/scripts/clean.sh
+RUN apt-get update && apt-get -y dist-upgrade && apt-get install -y qgis
 
 # A few tunable variables for QGIS
 ENV QGIS_DEBUG 5
